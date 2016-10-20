@@ -46,8 +46,6 @@ public class AffinityLoadBalancingExample {
 
             runAffinityJobs(ignite, companies.values());
 
-            Ignition.stop("affinity-grid-node-0", true);
-
             destroyCaches(ignite);
         }
 
